@@ -1,0 +1,11 @@
+[build]
+  functions = "src/functions"
+  command = "npm run build"  # Change this if your build script is different
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[dev]
+  functionsPort = 4000  # Adjust this if your functions run on a different port during development
