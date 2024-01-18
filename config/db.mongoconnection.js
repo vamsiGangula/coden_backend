@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
-const url = `mongodb://${process.env.MONGO_HOST}:${process.env.MONGO_PORT}/${process.env.MONGO_DB_NAME}`;
+// const url = `mongodb://${process.env.MONGO_HOST}:${process.env.MONGO_PORT}/${process.env.MONGO_DB_NAME}`;
+const url =process.env.MONGODB_URI;
 mongoose
   .connect(url, { useNewUrlParser: true, useUnifiedTopology: true, family: 4 })
   .then((resp) => {
