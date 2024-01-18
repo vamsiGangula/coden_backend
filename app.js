@@ -12,6 +12,7 @@ app.use(cors({
     credentials: true,
 }));
   
+
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/get', (req, res) => {
