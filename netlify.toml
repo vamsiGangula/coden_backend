@@ -1,6 +1,6 @@
 [build]
   functions = "src/functions"
-  command = "npm run build"  # Change this if your build script is different
+  command = "node app.js"  # Change this if your build script is different
 
 [[redirects]]
   from = "/api/*"
